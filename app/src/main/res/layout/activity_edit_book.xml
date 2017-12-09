@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingEnd="32dp"
+    android:paddingStart="32dp"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/bookIV"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_logo"
+            app:civ_border_color="#000"
+            app:civ_border_width="2dp" />
+
+              <EditText
+            android:id="@+id/book_titleET"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Title"
+            android:inputType="textPersonName" />
+
+
+        <EditText
+            android:id="@+id/book_descET"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description"
+            android:maxLines="6"
+            android:inputType="textMultiLine" />
+
+        <EditText
+            android:id="@+id/book_priceET"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Price"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/book_dateB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/EditTextStyle"
+            android:text="Date"
+            android:textAllCaps="false"
+            android:gravity="start|center_vertical"/>
+
+        <Button
+            android:id="@+id/add_pdf_fileB"
+            android:background="@drawable/textborder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Add Pdf File"
+            android:textColor="#fff"
+            android:textAllCaps="false"
+            android:layout_marginTop="16dp"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"/>
+
+        <Button
+            android:id="@+id/savechangesB"
+            android:background="@drawable/textborder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="save changes"
+            android:textColor="#fff"
+            android:layout_marginTop="32dp"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"/>
+
+    </LinearLayout>
+</ScrollView>

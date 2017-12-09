@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hamza.alif.bookstore">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher2"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Ui.SplachActivity"
+            android:theme="@style/Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Ui.LoginActivity"
+            android:label="Login"
+            android:theme="@style/Login" />
+        <activity
+            android:name=".Ui.BooksActivity"
+            android:label="Books"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Ui.RegisterActivity"
+            android:configChanges="screenSize|orientation"
+            android:label="@string/register_with_us" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.hamza.alif.bookstore.Fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_path" />
+        </provider>
+
+
+        <activity android:name=".Ui.AddBookActivity"
+            android:label="Add New Book"
+            android:parentActivityName=".Ui.BooksActivity"
+            />
+        <activity android:name=".Ui.EditBookActivity"
+            android:label="Edit Book"
+            android:parentActivityName=".Ui.BooksActivity"/>
+        <activity android:name=".Ui.EditProfileActivity"
+            android:label="Edit Publisher"
+            android:parentActivityName=".Ui.BooksActivity"
+            />
+        <activity android:name=".Ui.PDFViewerActivity"
+            />
+    </application>
+
+</manifest>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">"متجر الكتاب "</string>
+    <string name="action_settings">الضبط</string>
+    <string name="camera">الكاميرا</string>
+    <string name="cannot_read_image">لا يمكن قراءه الصوره</string>
+    <string name="choose">اختار</string>
+    <string name="email">"البريدالالكترونى "</string>
+    <string name="email_already_exist">الايميل موجود بالفعل</string>
+    <string name="email_not_formatted">"الايميل غير صحيح "</string>
+    <string name="enter_email">"ادخل البريد "</string>
+    <string name="enter_name">ادخل اسمك</string>
+    <string name="error_in_connection">خطا فى الاتصال</string>
+    <string name="enter_password">"ادخل الرقم السرى "</string>
+    <string name="forget_password">"نسيت كلمه المرور "</string>
+    <string name="gallery">ستوديو</string>
+    <string name="login">الدخول</string>
+    <string name="logout">الخروج</string>
+    <string name="password">كلمه المرور</string>
+    <string name="password_length_error" translatable="false">الباسوورد > من 6</string>
+    <string name="register">دخول</string>
+    <string name="register_with_us">سجل معنا</string>
+    <string name="loading">تحميل</string>
+    <string name="check_your_mail">"افحص بريدك "</string>
+    <string name="user_not_found">"المستخدم غير موجود "</string>
+    <string name="can_not_read_file">الملف غير مقروء</string>
+</resources>
